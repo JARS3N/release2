@@ -1,0 +1,16 @@
+Package: release2
+Type: Package
+Title: release2
+Version: 0.1.0
+Description: rel
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.2)
+Imports:
+    shiny,
+    dplyr,
+    dbplyr,
+    rmarkdown,
+    rlang,
+	pagedown,
+    adminKraken
