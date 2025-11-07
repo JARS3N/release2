@@ -1,4 +1,4 @@
-app <- function(con = adminKraken::con_dplyr(), table_map = TABLE_MAP) {
+app <- function() {
   shiny::runApp(
     shiny::shinyApp(
       ui     = release2::ui(),                   # <- use your actual UI fn name
@@ -7,3 +7,4 @@ app <- function(con = adminKraken::con_dplyr(), table_map = TABLE_MAP) {
     launch.browser = TRUE
   )
 }
+
