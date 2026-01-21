@@ -14,7 +14,7 @@ generate_table <- function(lot_vals, specs, get_Gains) {
                        "Gain %cv"  ,
                        "KSV avg"   ,
                        "KSV %cv"   ),
-    values = (
+    values = format(
       c(
         "O2LED avg" = lot_vals$O2LED,
         "O2LED %cv" = lot_vals$O2CV,
@@ -24,7 +24,7 @@ generate_table <- function(lot_vals, specs, get_Gains) {
         "Gain %cv"  = lot_vals$GAINCV,
         "KSV avg"   = lot_vals$KSV,
         "KSV %cv"   = lot_vals$KSVCV
-      )
+      ), scientific = FALSE, trim = TRUE
     ),
     specs = spc_strs,
     results = res)
